@@ -20,7 +20,7 @@ class GalleryImage extends StreamlineModel
     public static function parse(array $data): GalleryImage
     {
         return new GalleryImage(
-            id: isset($data['id']) ? (int)$data['id'] : '',
+            id: isset($data['id']) ? (int)$data['id'] : 0,
             title: $data['title'] ?? '',
             description: $data['description'] ?? '',
             original_path: $data['original_path'] ?? '',
