@@ -25,7 +25,7 @@ class BookedDate extends StreamlineModel
             start_date: $data['startdate'] ?? '',
             end_date: $data['enddate'] ?? '',
             checkout: $data['checkout'] ?? '',
-            type_id: isset($data['type_id']) ? (int)$data['type_id'] : '',
+            type_id: isset($data['type_id']) ? (int)$data['type_id'] : 0,
             type_name: $data['type_name'] ?? '',
             type_description: $data['type_description'] ?? '',
         );
